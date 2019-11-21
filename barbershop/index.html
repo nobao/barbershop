@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Барбершоп "Бородинский"</title>
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
   <header class="main-header">
@@ -51,71 +54,76 @@
       </ul>
     </section>
   
-    <section class="news">
-      <h2>Новости</h2>
-      <ul class="news-list">
-        <li class="news-item">
-          <p>НАМ НАКОНЕЦ ЗАВЕЗЛИ ЯГЕРМАЙСТЕР! ТЕПЕРЬ ВЫ МОЖЕТЕ ПРОПУСТИТЬ СТАКАНЧИК ВО ВРЕМЯ СТРИЖКИ</p>
-          <time datetime="2019-01-11">11 января</time>
-        </li>
-        <li class="news-item">
-          <p>В НАШЕЙ КОМАНДЕ ПОПОЛНЕНИЕ, БОРИС «БРИТВА» СТРИГУНЕЦ, ОБЛАДAТЕЛЬ МНОЖЕСТВА ТИТУЛОВ И НАГРАД ПОПОЛНИЛ НАШИ СТРОЙНЫЕ РЯДЫ</p>
-          <time datetime="2019-01-18">18 января</time>
-        </li>
-      </ul>
-      <a class="button" href="news.html">ВСЕ НОВОСТИ</a>
-    </section>
+    <div class="index-columns">
+      <section class="news">
+        <h2>Новости</h2>
+        <ul class="news-list">
+          <li class="news-item">
+            <p>НАМ НАКОНЕЦ ЗАВЕЗЛИ ЯГЕРМАЙСТЕР! ТЕПЕРЬ ВЫ МОЖЕТЕ ПРОПУСТИТЬ СТАКАНЧИК ВО ВРЕМЯ СТРИЖКИ</p>
+            <time datetime="2019-01-11">11 января</time>
+          </li>
+          <li class="news-item">
+            <p>В НАШЕЙ КОМАНДЕ ПОПОЛНЕНИЕ, БОРИС «БРИТВА» СТРИГУНЕЦ, ОБЛАДAТЕЛЬ МНОЖЕСТВА ТИТУЛОВ И НАГРАД ПОПОЛНИЛ НАШИ СТРОЙНЫЕ РЯДЫ</p>
+            <time datetime="2019-01-18">18 января</time>
+          </li>
+        </ul>
+        <a class="button" href="news.html">ВСЕ НОВОСТИ</a>
+      </section>
+    
+      <section class="gallery">
+        <h2>Фотогалерея</h2>
+        <figure class="gallery-content">
+          <a href="#">
+            <img src="img/studio.jpg" width="286" height="164" alt="Интерьер">
+          </a>
+        </figure>
+        <button class="button gallery-button gallery-button-back">НАЗАД</button>
+        <button class="button gallery-button gallery-button-next">ВПЕРЕД</button>
+      </section>
+    </div>
   
-    <section class="gallery">
-      <h2>Фотогалерея</h2>
-      <figure class="gallery-content">
-        <a href="#">
-          <img src="img/studio.jpg" width="286" height="164" alt="Интерьер">
-        </a>
-      </figure>
-      <button class="button gallery-button gallery-button-back">НАЗАД</button>
-      <button class="button gallery-button gallery-button-next">ВПЕРЕД</button>
-    </section>
-  
-    <section class="contacts">
-      <h2>Контактная информация</h2>
-      <p>
-        БАРБЕРШОП «БОРОДИНСКИЙ»
-        <br>АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, Б. КОНЮШЕННАЯ, Д. 19/8
-        <br>ТЕЛЕФОН: +7 (495) 666-02-66
-      </p>
-      <p>
-        ВРЕМЯ РАБОТЫ:
-        <br>ПН—ПТ: С 10:00 ДО 22:00
-        <br>СБ—ВС: С 10:00 ДО 19:00
-      </p>
-      <a class="button" href="map.html">Как проехать</a>
-      <a class="button" href="contacts.html">Обратная связь</a>
-    </section>
-  
-    <section class="appointment">
-      <h2>Записаться</h2>
-      <p class="appointment-info">УКАЖИТЕ ЖЕЛАЕМУЮ ДАТУ И ВРЕМЯ И МЫ СВЯЖЕМСЯ С ВАМИ ДЛЯ ПОДТВЕРЖДЕНИЯ БРОНИ</p>
-      <form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
-        <p class="appointment-item">
-          <label for="appointment-date">Дата</label>
-          <input type="text" name="date" id="appointment-date" value="" placeholder="08.10.2019">
+    <div class="index-columns">
+      <section class="contacts">
+        <h2>Контактная информация</h2>
+        <p>
+          БАРБЕРШОП «БОРОДИНСКИЙ»
+          <br>АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, Б. КОНЮШЕННАЯ, Д. 19/8
+          <br>ТЕЛЕФОН: +7 (495) 666-02-66
         </p>
-        <p class="appointment-item">
-          <label for="appointment-time">Время</label>
-          <input type="text" name="time" id="appointment-time" value="" placeholder="10:00">
+        <p>
+          ВРЕМЯ РАБОТЫ:
+          <br>ПН—ПТ: С 10:00 ДО 22:00
+          <br>СБ—ВС: С 10:00 ДО 19:00
         </p>
-        <p class="appointment-item">
-          <label for="appointment-name">Ваше имя</label>
-          <input type="text" name="name" id="appointment-name" value="" placeholder="Борода">
-        </p>
-        <p class="appointment-item">
-          <label for="appointment-phone">Телефон</label>
-          <input type="tel" name="phone" id="appointment-phone" value="" placeholder="+7 123 456-78-90">
-        </p>
-        <button class="button" type="submit">Отправить</button>
-      </form>
-    </section>
+        <a class="button" href="map.html">Как проехать</a>
+        <a class="button" href="contacts.html">Обратная связь</a>
+      </section>
+    
+      <section class="appointment">
+        <h2>Записаться</h2>
+        <p class="appointment-info">УКАЖИТЕ ЖЕЛАЕМУЮ ДАТУ И ВРЕМЯ И МЫ СВЯЖЕМСЯ С ВАМИ ДЛЯ ПОДТВЕРЖДЕНИЯ БРОНИ</p>
+        <form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
+          <p class="appointment-item">
+            <label for="appointment-date">Дата</label>
+            <input type="text" name="date" id="appointment-date" value="" placeholder="08.10.2019">
+          </p>
+          <p class="appointment-item">
+            <label for="appointment-time">Время</label>
+            <input type="text" name="time" id="appointment-time" value="" placeholder="10:00">
+          </p>
+          <p class="appointment-item">
+            <label for="appointment-name">Ваше имя</label>
+            <input type="text" name="name" id="appointment-name" value="" placeholder="Борода">
+          </p>
+          <p class="appointment-item">
+            <label for="appointment-phone">Телефон</label>
+            <input type="tel" name="phone" id="appointment-phone" value="" placeholder="+7 123 456-78-90">
+          </p>
+          <button class="button" type="submit">Отправить</button>
+        </form>
+      </section>
+    </div>
+
   </main>  
 
   <footer class="main-footer">
