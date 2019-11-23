@@ -268,6 +268,37 @@ a {
   list-style: none;
 }
 
+.slogan {
+  font-size: 48px;
+  line-height: 48px;
+
+  text-align: center;
+}
+
+.arsenal-title,
+.price-title,
+.about-title {
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.arsenal-list {
+  list-style: none;
+}
+
+.price-list {
+  border-collapse: collapse;
+}
+
+.price-list td {
+  border: 2px solid #000101;
+  vertical-align: middle;
+}
+
+.price-list td:nth-child(even) {
+  text-align: center;
+}
+
 .main-footer {
   color: #ffffff;
 
