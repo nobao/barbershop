@@ -50,10 +50,24 @@ a {
   margin-bottom: 75px;
 }
 
+.inner-page .main-header {
+  margin-bottom: 50px;
+
+  background-color: #000000;
+}
+
 .main-header-logo {
   order: 2;
   width: 368px;
   height: 153px;
+}
+
+.inner-page .main-header-logo {
+  width: 111px;
+  height: 24px;
+  padding: 23px 20px;
+
+  order: 0;
 }
 
 .main-navigation {
@@ -66,6 +80,11 @@ a {
   color: #ffffff;
 
   background-color: #000000;
+}
+
+.inner-page .main-navigation {
+  align-items: flex-start;
+  flex-direction: row;
 }
 
 .main-navigation-wrapper {
@@ -100,6 +119,10 @@ a {
 
 .user-navigation {
   width: 140px;
+}
+
+.inner-page .user-navigation {
+  margin-left: auto;
 }
 
 .site-navigation a,
@@ -198,11 +221,19 @@ a {
 }
 
 .page-title {
+  margin: 0;
+  margin-bottom: 15px;
+  padding: 0;
+
   font-size: 30px;
   line-height: 42px;
 }
 
 .breadcrumbs {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 50px;
+
   list-style: none;
 }
 
@@ -219,16 +250,25 @@ a {
   color: #aba9a7;
 }
 
-.filter fieldset {
+.catalog-columns {
+  display: flex;
+  justify-content: space-between;
+}
+
+.filters {
+  width: 180px;
+}
+
+.filters fieldset {
   border: none;
 }
 
-.filter legend {
+.filters legend {
   font-size: 24px;
   line-height: 30px;
 }
 
-.filter ul {
+.filters ul {
   list-style: none;
   line-height: 18px;
 }
@@ -244,13 +284,31 @@ a {
   opacity: 0.5;
 }
 
+.catalog {
+  width: 700px;
+}
+
 .catalog-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 25px;
+
   list-style: none;
 }
 
 .catalog-item {
+  width: 220px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+
   background-color: #f8f8f8;
   box-shadow: 0 0 15px rgba(0, 1, 1, 0.2);
+}
+
+.catalog-item:nth-child(3n) {
+  margin-right: 0;
 }
 
 .catalog-item:hover {
@@ -284,6 +342,9 @@ a {
 }
 
 .pagination-list {
+  padding: 0;
+  margin: 0;
+
   list-style: none;
 }
 
@@ -384,6 +445,10 @@ a {
   background-image: url(../img/pattern-dark.jpg);
   background-position: 0 0;
   background-repeat: repeat;
+}
+
+.inner-page .main-footer {
+  margin-top: 45px;
 }
 
 .main-footer .container {
