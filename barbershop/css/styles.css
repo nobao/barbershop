@@ -253,6 +253,7 @@ a {
 .catalog-columns {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .filters {
@@ -413,21 +414,42 @@ a {
 }
 
 .slogan {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 70px;
+
   font-size: 48px;
   line-height: 48px;
 
   text-align: center;
 }
 
+.arsenal {
+  margin-bottom: 65px;
+  
+  width: 460px;
+}
+
 .arsenal-title,
 .price-title,
 .about-title {
+  margin: 0;
+  margin-bottom: 35px;
+  padding: 0;
+
   font-size: 24px;
   line-height: 30px;
 }
 
 .arsenal-list {
+  margin: 0;
+  padding: 0;
+
   list-style: none;
+}
+
+.price {
+  width: 470px;
 }
 
 .price-list {
@@ -442,6 +464,22 @@ a {
 .price-list td:nth-child(even) {
   text-align: center;
 }
+
+.about {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.about h2 {
+  width: 100%;
+}
+
+.about p {
+  margin: 0;
+  padding: 0;
+  flex: 1;
+}
+
 
 .main-footer {
   padding: 60px 0;
